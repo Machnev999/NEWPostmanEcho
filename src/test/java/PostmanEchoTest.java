@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.*;
 
 public class PostmanEchoTest {
     @Test
-    public void shouldResultFromPost() {
+    void shouldResultFromPost() {
 
 // Given - When - Then
 // Предусловия
@@ -18,7 +18,7 @@ public class PostmanEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("some data"))
+                .body("data", equalTo("some body wast told me"))
         ;
     }
 }
