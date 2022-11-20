@@ -23,7 +23,7 @@ public class PostmanEchoTest2 {
                 .post("/post")
 // Проверки
                 .then()
-                .body("data.store.book.author.last()", equalTo("J. R. R. Tolkien"))
+                .body("data.store.book.size()", equalTo("J. R. R. Tolkien"))
                         ;
     }
 }
